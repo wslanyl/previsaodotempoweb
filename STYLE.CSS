@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo suave com gradiente */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centraliza tudo */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column; /* força tudo em coluna */
+  align-items: center;    /* centraliza no meio */
+  gap: 20px;              /* espaço entre os blocos */
+}
+  
+
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2980b9;
+}
+
+/* Input + botão lado a lado */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  border: 2px solid #2980b9;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1f6391;
+}
+
+/* Nome da cidade */
+#cidade-nome {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Cards de previsão */
+#previsoes-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background: #f0f8ff;
+  padding: 15px;
+  border-radius: 12px;
+  width: 160px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
